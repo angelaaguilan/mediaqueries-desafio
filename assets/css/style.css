@@ -80,10 +80,9 @@ li a {
 
 li a:hover {
     font-size: 15px;
-     color: rgb(148, 208, 27); 
+    color: rgb(148, 208, 27); 
     border-bottom: 0px solid;
     background: #241596;
-
 }
 
 .lista-select {
@@ -318,7 +317,7 @@ p a:hover {
     }
 
     .txt-auto {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .btn-ver-mas {
