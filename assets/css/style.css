@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62,5%;
+}
+
+nav {
+    grid-area: nav;
+    background: #013eb8;
+    color: white;
+    display: flex; 
+    justify-content:space-around;
+    align-items: center;
+}
+
+section {
+    grid-area: section;
+    background-color: rgb(192, 190, 190);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    background: #001e5a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-principal {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 10fr 1fr;
+    grid-template-areas:
+        "nav"
+        "section"
+        "main"
+        "footer";
+    height: 100vh;
+}
+
+/* nombre del sitio en Nav */
+.dato-principal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nombre-electrico {
+    padding-left: 0.5rem;
+}
+
+.icono {
+    background-color: #0037a1;
+    color: white;
+    border: none;
+}
+
+.menu-lateral {
+    display: none;
+}
+
+li a {
+    color: beige;
+    text-decoration: none;
+}
+
+li a:hover {
+    font-size: 15px;
+     color: rgb(148, 208, 27); 
+    border-bottom: 0px solid;
+    background: #241596;
+
+}
+
+.lista-select {
+    width: 7rem;
+}
+
+/* Tarjeta con la imagen del auto */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border: 1px solid gray;
+    height: 24rem;
+    width: 20rem;
+    box-shadow: 7px 7px 12px rgba(20, 20, 20, 0.3);
+}
+
+.novisible {
+    display: none;
+}
+
+.txt-auto {
+    font-size: 1.5rem;
+}
+
+.paginacion {
+    display: flex;
+    padding-top: 10px;
+}
+
+.numeros {
+    border: 0.09rem solid blue;
+    color: blue;
+    font-weight: 300px;
+    padding: 0.7rem;
+}
+
+.numeros:hover {
+    font-size: 15px;
+    padding: 0.7rem;
+}
+
+p a {
+    text-decoration: none;
+}
+
+p a:hover {
+    font-weight: 900px;
+    font-size: 16px;
+}
+
+.btn-ver-mas {
+    color: white;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 20px;
+    background: #0037a1;
+}
+
+.btn-ver-mas:hover {
+    font-size: 15px;
+    width: 7rem;
+}
+
+.iconos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.icono-img {
+    border-radius: 50%;    
+}
+
+.txt-footer {
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+/* TABLET */
+@media ((width >= 576px) and (width < 992px)) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 62,5%;
+    }
+
+    .container-principal {
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        grid-template-rows: 1fr 12fr 1fr;
+        grid-template-areas:
+            "nav nav"
+            "section main"
+            "footer footer";
+        height: 100vh;
+    }
+
+    section {
+        justify-content:flex-start; 
+        padding-top: 3rem;
+    }
+
+    section div p {
+        padding-bottom: 2rem;
+    }
+    .container-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .menu-superior {
+        display: none;
+    }
+
+    .menu-lateral {
+        display: flex;
+    }
+
+    .lista-menu-lateral {
+        display: flex;
+        list-style: none;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .grilla-pdtos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    .card {
+        width: 18rem;
+    }
+
+    .novisible {
+        display:inline-flex;
+    }
+
+    .novisible-576 {
+        display: none;
+    }
+
+    .txt-footer {
+        font-size: 1.1rem;
+    }
+}
+
+/* MEDIA QUERIES PARA ESCRITORIO*/
+@media (width >= 992px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 62,5%;
+    }
+
+    .container-principal {
+        display: grid;
+        grid-template-columns: 8rem 1fr;
+        grid-template-rows: 1fr 12fr 1fr;
+        grid-template-areas:
+        "nav section"
+        "nav main"
+        "footer main";
+        height: 100vh;
+    }
+    
+    .dato-principal {
+        padding-top: 3rem;
+    }
+    
+    .container-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .menu-superior {
+        display: none;
+    }
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .lista-menu-lateral {
+        list-style: none;
+        font-size: 1rem;
+    }
+
+    .lista-menu-lateral li {
+        padding-bottom: 1rem;
+    }
+
+    .nombre-electrico {
+        font-size: 1rem;
+    }
+
+    .grilla-pdtos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: white;
+        border: 1px solid gray;
+        height: 14rem;
+        width: 15rem;
+        box-shadow: 7px 7px 12px rgba(20, 20, 20, 0.3);
+    }
+
+    main div div img {
+        width: 7rem;
+    }
+
+    .txt-auto {
+        font-size: 1.5rem;
+    }
+
+    .btn-ver-mas {
+        color: white;
+        height: 2rem;
+        width: 5rem;
+        border-radius: 20px;
+        background: #0037a1;
+    }
+
+    .txt-footer {
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 0.5rem;
+    }
+}
