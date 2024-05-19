@@ -29,6 +29,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow-y: auto;
 }
 
 footer {
@@ -100,10 +101,6 @@ li a:hover {
     height: 24rem;
     width: 20rem;
     box-shadow: 7px 7px 12px rgba(20, 20, 20, 0.3);
-}
-
-.novisible {
-    display: none;
 }
 
 .txt-auto {
@@ -226,14 +223,6 @@ p a:hover {
         width: 18rem;
     }
 
-    .novisible {
-        display:inline-flex;
-    }
-
-    .novisible-576 {
-        display: none;
-    }
-
     .txt-footer {
         font-size: 1.1rem;
     }
@@ -269,10 +258,12 @@ p a:hover {
         gap: 3rem;
     }
 
+    /* Menú de Navegación - Hamburguesa Mobile */
     .menu-superior {
         display: none;
     }
 
+    /* Menú de Navegación - Tablet y Escritorio */
     .menu-lateral {
         display: flex;
         flex-direction: column;

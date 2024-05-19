@@ -7,24 +7,22 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-
 <body>
     <!-- Página Principal -->
     <div class="container-principal">
-
+        <!-- Menú de Navegación -->
         <nav class="container-nav">
+            <!-- Nombre e ícono del sitio -->
             <div class="dato-principal">
                 <span class="material-symbols-outlined">electric_car</span>
                 <p class="nombre-electrico"> Electric Cars </p>
             </div>
-
+            <!-- Menú de Navegación - Hamburguesa Mobile -->
             <div class="menu-superior">
-                <!-- Menu lateral derecho-superior -->
                 <button type="button" class="material-symbols-outlined icono">reorder</button>
             </div>
-
+            <!-- Menú de Navegación - Tablet y Escritorio -->
             <div class="menu-lateral">
-                <!-- Menu lateral derecho-superior -->
                 <ul class="lista-menu-lateral">
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Catálogo</a></li>
@@ -33,69 +31,73 @@
                 </ul>
             </div>
         </nav>
-
+        <!-- Sección de filtros de búsqueda -->
         <section>
             <div>
                 <p>Ordenar Por:</p>
             </div>
+            <!-- Lista de opciones -->
             <select class="lista-select">
                 <option value="precio">Precio</option>
                 <option value="marca">Marca</option>
                 <option value="modelo">Modelo</option>
             </select>
         </section>
-
+        <!-- Sección Principal - Productos -->
         <main>
+            <!-- Container de los productos -->
             <div class="grilla-pdtos">
+                <!-- Tarjeta con cada producto -->
                 <div class="card">
                     <img src="./assets/img/Chevrolet-BoltEUV-AzulMetalico.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>Chevrolet</p>
                     <p class="txt-auto"><strong>Modelo: </strong>Bolt Euv</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
-                <div class="card novisible">
+                <div class="card ">
                     <img src="./assets/img/Dolphin-mini-ev-verde.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>BYD</p>
                     <p class="txt-auto"><strong>Model: </strong>Dolphin Mini</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
-                <div class="card novisible novisible-576">
+                <div class="card ">
                     <img src="./assets/img/BMW-iX3.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>BMW</p>
                     <p class="txt-auto"><strong>Model: </strong>iX3</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
-                <div class="card novisible novisible-576">
+                <div class="card">
                     <img src="./assets/img/hyundai-kona.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>Hyundai</p>
                     <p class="txt-auto"><strong>Model: </strong>Kona</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
-                <div class="card novisible novisible-576">
+                <div class="card">
                     <img src="./assets/img/Kia-EV9.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>Kia</p>
                     <p class="txt-auto"><strong>Model: </strong>EV9</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
-                <div class="card novisible novisible-576">
+                <div class="card">
                     <img src="./assets/img/kwid-etech-intens-plata.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>Renault</p>
                     <p class="txt-auto"><strong>Model: </strong>E-Kwid</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
-                <div class="card novisible novisible-576">
+                <div class="card">
                     <img src="./assets/img/MGZSEVAzul.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>MG</p>
                     <p class="txt-auto"><strong>Model: </strong>ZS EV</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
-                <div class="card novisible novisible-576">
+                <div class="card">
                     <img src="./assets/img/NissanLeafGris.jpg" alt="Electric Cards">
                     <p class="txt-auto"><strong>Marca: </strong>Nissan</p>
                     <p class="txt-auto"><strong>Model: </strong>Leaf</p>
                     <button class="btn-ver-mas">Ver más</button>
                 </div>
             </div>
+            <!-- Paginación en la container de productos -->
             <div class="paginacion">
                 <p class="numeros"><a href=""><<</a></p>
                 <p class="numeros"><a href="">1</a></p>
@@ -104,12 +106,14 @@
                 <p class="numeros"><a href="">>></a></p>
             </div>
         </main>
-
-        <footer> <!-- Pie de página -->
+        <!-- Pie de página -->
+        <footer>
+            <!-- Íconos de las RRRSS en footer  -->
             <div class="iconos-footer">
                 <a href="https://www.facebook.com/" target="_blank"><img class="icono-img" src="./assets/img/Facebook.png" alt="Facebook"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img class="icono-img" src="./assets/img/Instagram.png" alt="Instagram"></a>
             </div>
+            <!-- Txt en footer -->
             <div class="txt-footer">
                 Todos los derechos reservados
             </div>
