@@ -99,8 +99,9 @@ li a:hover {
     background-color: white;
     border: 1px solid gray;
     height: 24rem;
-    width: 20rem;
+    width: 18rem;
     box-shadow: 7px 7px 12px rgba(20, 20, 20, 0.3);
+    margin: 1rem 1rem;
 }
 
 .txt-auto {
@@ -117,20 +118,18 @@ li a:hover {
     color: blue;
     font-weight: 300px;
     padding: 0.7rem;
-}
-
-.numeros:hover {
-    font-size: 15px;
-    padding: 0.7rem;
-}
-
-p a {
     text-decoration: none;
 }
 
-p a:hover {
-    font-weight: 900px;
+.numeros:hover {
+    color: white;
     font-size: 16px;
+    font-weight: 900px;
+    padding: 0.7rem;
+    border-bottom: 0px solid;
+    background: #3521cf;
+    /* 013eb8 */
+    
 }
 
 .btn-ver-mas {
@@ -169,7 +168,7 @@ p a:hover {
         padding: 0;
         font-size: 62,5%;
     }
-
+    
     .container-principal {
         display: grid;
         grid-template-columns: 8rem 1fr;
@@ -215,7 +214,7 @@ p a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-evenly;
-        gap: 2rem;
+        gap: 1rem;
         padding-top: 1rem;
     }
 
@@ -288,7 +287,7 @@ p a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-evenly;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .card {
@@ -299,7 +298,7 @@ p a:hover {
         background-color: white;
         border: 1px solid gray;
         height: 14rem;
-        width: 15rem;
+        width: 13rem;
         box-shadow: 7px 7px 12px rgba(20, 20, 20, 0.3);
     }
 
